@@ -78,7 +78,7 @@ namespace TicTacToe
 
             if (coordsSplit[0] == "q")              //player quits
             {
-                Console.WriteLine("Oh no, player has quit the game!\n");
+                Console.WriteLine("Oh no, " + currentPlayer.Name + " has quit the game!\n");
                 Quit();
             }
 
@@ -132,7 +132,7 @@ namespace TicTacToe
         //win message
         public void WeHaveAWinner()
         {
-            Console.WriteLine("Move accepted, well done you've won the game!\n");
+            Console.WriteLine("Move accepted. Well done " + currentPlayer.Name + ", you've won the game!\n");
             DisplayBoard();
             Console.ReadLine();
         }
