@@ -62,16 +62,11 @@ namespace TicTacToe
         public void TurnOrder()
         {
             if (turnCount % 2 != 0)
-            {
                 currentPlayer = fPlayers[0];
-                Console.WriteLine("Player 1 enter a coord x,y to place your X or enter 'q' to give up: ");
-            }
             else
-            {
                 currentPlayer = fPlayers[1];
-                Console.WriteLine("Player 2 enter a coord x,y to place your O or enter 'q' to give up: ");
-            }
-
+            
+            Console.WriteLine(currentPlayer.Name + " enter a coord x,y to place your " + currentPlayer.Token + " or enter 'q' to give up: ");
             TakeTurn();
         }
 
